@@ -1,0 +1,156 @@
+@charset "UTF-8";
+/*iniciando o css com algumas programações para o nav*/
+*,
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*definindo a letra e o tamanho no corpo inteiro do arquivo*/
+body {
+    font-family: "Handelson Six";
+    font-size: 125%;
+}
+
+body {
+    background-color: #1e1e2c;
+    color: #ff6e00;
+}
+
+h1 {
+  text-align: center;
+    padding-top: 2%; 
+    padding-left: 3%;
+ }
+/*gradiente da nav para o body*/
+ .gradiente{
+  margin-top: 1%;
+  height: 10px;
+  background: linear-gradient(to bottom, #ff6e00, #F2295B 100%);
+ }
+ /*imagem do nav
+ perceba que tem um position absolute
+ lembrando que o posição absoluta deixa qualquer item
+ na frente de qualquer container dentro do html
+ logo, nao mexer nessa caixa*/
+.imgnav {
+    max-width: 10%;
+    max-height: 10%;
+    position: absolute;
+    display: flex;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+/*nav nao responsivel
+ver como deixar responsivo*/
+.navHome{
+  padding-left: 26%;
+
+}
+  .container{
+    display: flex;
+    padding-left: 5%;
+  }
+
+  .button-inter{
+    display: flex;
+  
+    margin: 1%;
+    padding: 10px 10px;
+  
+    font-family: 'Handelson Six';
+    font-size: 20px;
+  
+    color: #ff6e00;
+    border: 1px solid #F2295B;
+  
+    text-decoration: none;
+    cursor: pointer;
+  
+    transition: .5s;
+  }
+  
+  .item9{
+    position: relative;
+    overflow: hidden;
+  
+    transition: .2s;
+  }
+  /*animação dos botões*/
+  .item9:hover{
+    color: #eee;
+    background: #F2295B;
+    box-shadow: 0 0 10px #F2295B, 0 0 15px #FF4573, 0 0 30px #E81566;  
+  
+    transition-delay: 1s;
+  }
+  
+  .item9 span{
+    position: absolute;
+    display: inline-block;
+  }
+  
+  .item9 span:nth-child(1){
+    width: 100%;
+    height: 2px;
+  
+    top: 0;
+    left: -100%;
+  
+    background: linear-gradient(88.89deg, transparent, #FF4573);
+  }
+  
+  .item9:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+  }
+  
+  .item9 span:nth-child(2){
+    width: 2px;
+    height: 100%;
+  
+    right: 0;
+    top: -100%;
+  
+    background: linear-gradient(181.44deg, transparent, #FF4573);
+  }
+  
+  .item9:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: .25s;
+  }
+  
+  .item9 span:nth-child(3){
+    width: 100%;
+    height: 2px;
+  
+    bottom: 0;
+    right: -100%;
+  
+    background: linear-gradient(269.44deg, transparent, #FF4573);
+  }
+  
+  .item9:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: .5s;
+  }
+  
+  .item9 span:nth-child(4){
+    width: 2px;
+    height: 100%;
+  
+    left: 0;
+    bottom: -100%;
+  
+    background: linear-gradient(359.88deg, transparent, #FF4573);
+  }
+  
+  .item9:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: .75s;
+  }
